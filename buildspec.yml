@@ -1,4 +1,5 @@
 version: 0.2
+
   phases:
     install:
      commands:
@@ -7,12 +8,12 @@ version: 0.2
           - sudo apt install apache2 -y
     build:
      commands:
-    -echo building file
-    - cp index.html/var/www/html/
+          - echo building file
+          - cp index.html/var/www/html/
     
     post_build:
      commands:
-    - echo configured
+          - echo configured
     
   artifacts:
     files:
